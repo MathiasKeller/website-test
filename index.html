@@ -160,7 +160,7 @@
         }
 
         .collapsible-section.expanded {
-            max-height: 2000px; 
+            max-height: 3000px; 
             opacity: 1;
             margin-top: 24px;
         }
@@ -189,16 +189,58 @@
             padding: 10px 24px;
         }
 
+        /* Mobile Adjustments for Massive Text & Spacing */
         @media (max-width: 600px) {
+            body {
+                padding: 12px 8px;
+            }
+            header {
+                margin-bottom: 6vh;
+            }
+            h1 {
+                font-size: 34px;
+                line-height: 1.2;
+            }
+            p.subtitle {
+                font-size: 20px;
+                margin-top: 12px;
+            }
             .instruction-card {
-                padding: 20px 20px;
+                padding: 24px 16px;
                 border-radius: 16px;
             }
             .step-item {
-                padding-left: 40px;
+                padding-left: 56px;
+                margin-bottom: 8vh; /* Large margin to limit items per screen */
+            }
+            .step-item:last-child {
+                margin-bottom: 4vh;
+            }
+            .step-item::before {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                top: 0;
+            }
+            .step-item p {
+                font-size: 22px; /* Drastically increased text size */
+                line-height: 1.4;
+                margin-bottom: 16px;
+            }
+            .btn {
+                font-size: 18px;
+                padding: 16px 28px;
+                width: 100%; /* Make buttons full width on mobile for easier tapping */
+            }
+            .btn-toggle {
+                width: auto;
             }
             .step-image {
                 border-radius: 8px;
+                margin: 20px 0 24px 0;
+            }
+            .highlight {
+                font-size: 22px;
             }
         }
     </style>

@@ -141,6 +141,16 @@
             font-weight: 600;
         }
 
+        /* Styles for Screenshots */
+        .step-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin: 12px 0 16px 0;
+            display: block;
+        }
+
         /* Hidden Section Styles */
         .collapsible-section {
             max-height: 0;
@@ -150,7 +160,7 @@
         }
 
         .collapsible-section.expanded {
-            max-height: 1000px; /* Arbitrary large number to allow full expansion */
+            max-height: 2000px; 
             opacity: 1;
             margin-top: 24px;
         }
@@ -187,6 +197,9 @@
             .step-item {
                 padding-left: 40px;
             }
+            .step-image {
+                border-radius: 8px;
+            }
         }
     </style>
 </head>
@@ -194,8 +207,8 @@
 
     <div class="container">
         <header>
-            <h1>Download Instructions</h1>
-            <p class="subtitle">Follow these steps to find and transfer your content.</p>
+            <h1>Kindle E-Reader Instructions</h1>
+            <p class="subtitle">Follow these steps to find, convert, and transfer your content.</p>
         </header>
 
         <div class="instruction-card">
@@ -203,15 +216,18 @@
                 <li class="step-item">
                     <p>Open the archive library in a new tab.</p>
                     <a href="https://annas-archive.gd/" target="_blank" class="btn">Anna's Archive</a>
+                    <img src="Screenshot 2026-07-25 at 19.34.15.png" alt="Screenshot of the Anna's Archive homepage with an empty search bar." class="step-image">
                 </li>
                 <li class="step-item">
                     <p>Search for what you are looking for in the search box.</p>
+                    <img src="Screenshot 2026-07-25 at 19.34.36.jpg" alt="Screenshot of the search results page on Anna's Archive, showing a search for 'el baile de las locas' with one result visible." class="step-image">
                 </li>
                 <li class="step-item">
                     <p>Click on the content that you want. Make sure the format is <span class="highlight">EPUB</span>, <span class="highlight">AWZ</span>, or <span class="highlight">AWZ3</span>.</p>
                 </li>
                 <li class="step-item">
                     <p>Scroll down to the slow downloads section.</p>
+                    <img src="Screenshot 2026-07-25 at 19.35.36.png" alt="Screenshot of the 'Slow downloads' section on Anna's Archive, displaying multiple download partner server links." class="step-image">
                 </li>
                 <li class="step-item">
                     <p>Download a file from the slow downloads link.</p>
@@ -233,9 +249,11 @@
                     <li class="step-item">
                         <p>Go to the online conversion tool.</p>
                         <a href="https://convertio.co/epub-azw3/" target="_blank" class="btn">Convert EPUB</a>
+                        <img src="Screenshot 2026-07-25 at 19.44.05.png" alt="Screenshot of the Convertio homepage, displaying a large red 'Choose Files' button and the EPUB to AZW3 format selection." class="step-image">
                     </li>
                     <li class="step-item">
                         <p>Upload your downloaded EPUB file to the converter.</p>
+                        <img src="Screenshot 2026-07-25 at 19.44.22.png" alt="Screenshot of the Convertio conversion interface after a file has been uploaded, with a 'READY' badge and a large red 'Convert' button visible." class="step-image">
                     </li>
                     <li class="step-item">
                         <p>Click convert and wait for the process to finish, then download the new AWZ3 formatted file.</p>
